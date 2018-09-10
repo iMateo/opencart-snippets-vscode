@@ -1,1 +1,32 @@
-{}
+{
+	"controller": {
+		"prefix": "controller",
+		"body": "\nclass Controller${1:FolderandControllerName} extends Controller {\n\tprivate \\$error = array();\n\n\tpublic function index() {\n\t\t\\$data = array();\n\n\t\t// \\$this->load->language('folder/languagefile');\n\n\t\t// \\$this->document->setTitle(\\$this->language->get('heading_title'));\n\n\t\t// \\$this->load->model('folder/modelfile');\n\n\n\t\t// TO DO...\n\n\t\t\n\t\t\\$data['header'] = \\$this->load->controller('common/header');\n\t\t\\$data['column_left'] = \\$this->load->controller('common/column_left');\n\t\t\\$data['footer'] = \\$this->load->controller('common/footer');\n\n\t\t\\$this->response->setOutput(\\$this->load->view('folder/file.tpl', \\$data));\n\t}\n\n\t// public function anotherMethod(){\n\n\t// }\n}\n    \t",
+		"description": "New Opencart Controller",
+		"scope": "source.php"
+	},
+	"language": {
+		"prefix": "language",
+		"body": "\n// Heading\n\\$_['heading_title']          = 'Heading Title';\n\n// Text\n// TO DO...\n\n// Column\n// TO DO...\n\n// Entry\n// TO DO...\n\n// Error\n// TO DO...\n    \t",
+		"description": "New Opencart Language",
+		"scope": "source.php"
+	},
+	"library": {
+		"prefix": "library",
+		"body": "\nclass ${1:LibraryName} \n{\n\tprivate \\$error = array();\n    private \\$registry;\n   \n\tpublic function __construct(\\$registry)\n    {\n\t\t\\$this->registry = \\$registry;\n\t}\n\n    // public function anotherMethod(){\n\n    // }\n}\n    \t",
+		"description": "New Opencart Library",
+		"scope": "source.php"
+	},
+	"model": {
+		"prefix": "model",
+		"body": "\nclass Model${1:FolderandModelName} extends Model\n{\n\tpublic function add(\\$data)\n    {\n\t\t\\$this->db->query(\"INSERT INTO `\" . DB_PREFIX . \"table_name` SET ...\");\n\t}\t\n}\n    \t",
+		"description": "New Opencart Model",
+		"scope": "source.php"
+	},
+	"view": {
+		"prefix": "view",
+		"body": "\n<?php echo \\$header; ?><?php echo \\$column_left; ?>\n\n<!-- TO DO... -->\n\n<?php echo \\$footer; ?>\n    \t",
+		"description": "New Opencart View",
+		"scope": "embedding.php"
+	}
+}
