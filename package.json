@@ -2,7 +2,7 @@
     "name": "opencart-snippets",
     "displayName": "OpenCart Snippets",
     "description": "OpenCart Snippets for smarter and faster coding",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "IhorChyshkala",
     "repository": "https://github.com/iMateo/opencart-snippets-vscode",
     "icon":"icon.png",
