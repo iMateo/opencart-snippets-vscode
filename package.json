@@ -1,0 +1,21 @@
+{
+    "name": "opencart-snippets",
+    "displayName": "OpenCart Snippets",
+    "description": "OpenCart Snippets for smarter and faster coding",
+    "version": "0.0.1",
+    "publisher": "IgorChyshkala",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
